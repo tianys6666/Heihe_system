@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css"/>
+    <link rel="stylesheet" href="/stylesheets/indexmonistor.css"/>
+    <title>watershed</title>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-wrapper">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="monitor">Monitor</a></li>
+                <li><a href="models">Models</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a class="special-li" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                <li><a class="special-li" data-toggle="modal" data-target="#register-modal">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="header-wrapper">
+    <div class="background-cover"></div>
+    <div class="container header-container">
+        <div class="header-picture"></div>
+        <div class="header-content">
+            <h2>WATERSHED</h2>
+            <p>The new web center of data
+                This site aims to  monitor the groundwater of China's Heihe River Basin
+                and it provides the science model for the people to use
+                </p>
+            <div data-toggle="modal" data-target="#register-modal">Create an Account</div>
+        </div>
+    </div>
+</div>
+<div class="introduction-wrapper">
+    <div class="container">
+        <div class="introduction-icons">
+            <div><img src="/images/Notes.png"/></div>
+            <div><img src="/images/Calculator.png"/></div>
+            <div><img src="/images/Location.png"/></div>
+            <div><img src="/images/Search.png"/></div>
+        </div>
+        <div class="introduction-content">
+            <h2>Monitor And Predict The Irrigation Water And
+                Groundwater In Various Regions</h2>
+        </div>
+        <div class="introduction-button">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Welcome to use</button>
+        </div>
+    </div>
+</div>
+<div id="special-function">
+    <div class="visual-function" id="first-function">
+        <div class="container">
+            <div class="visual-picture"></div>
+            <div class="visual-content">
+                <div id="canvas"></div>
+                <div class="visual-word">
+                    <h2>Visualization The Obswell</h2>
+                    <strong>simply,clean and direct</strong>
+                    <blockquote class="blockquote-reverse">
+                        It can help us visualize the historical groundwater data
+                        that we want to know, for China Heihe region it
+                        can have more than 100 pumping wells used for display,
+                        and it is already increasing.....
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="model-function">
+        <div class="container">
+            <div class="model-content">
+                <div class="model-word">
+                    <h2>Online Hydrological Model</h2>
+                    <strong>quick,convenient</strong>
+                    <blockquote>
+                        In the basis of the traditional GIS, the website use the hydrological model to
+                        drive the data,now it offers the Modflow hydrological model.
+                    </blockquote>
+                    <em>More models Will Provide</em>
+                </div>
+                <div id="canvas"></div>
+            </div>
+            <div class="model-picture"></div>
+        </div>
+    </div>
+    <div class="data-function">
+        <div class="container">
+            <div class="data-picture"></div>
+            <div class="data-content">
+                <h2>The Core:Data</h2>
+                <strong>Numerous and free</strong>
+                <blockquote class="blockquote-reverse">
+                    We provide the vast amounts of data of the China Heihe River Basin on a cloud platform,
+                    The data as a core,it provided for users to download, use and analysis
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-wrapper">
+    <div class="contact-wrapper">
+        <div class="container contact-header"><h2>Contact Us</h2></h3></div>
+        <p class="container contact-content">
+            We come from Lanzhou University,the Institute of Information Science and Engineering,
+            the Lab of DSLAB and Model Integration Group
+        </p>
+        <div class="container technology-header"><h2></h2></div>
+        <div class="container technology-content">
+            <div><img src="/images/icon_node.jpg" alt="node"></div>
+            <div><img src="/images/icon_mongo.jpg" alt="mongo"></div>
+            <div><img src="/images/icon_leaflet.jpg" alt="leaflet"></div>
+            <div><img src="/images/icon_react.jpg" alt="react"></div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>
+
+<div class="return-header">
+    <div class="return-picture"></div>
+</div>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div></div>
+            </div>
+            <div class="modal-body">
+                <form class="">
+                    <div class="input-group">
+                        <span class="input-group-addon glyphicon glyphicon-user" aria-hidden="true" id="username"></span>
+                        <input type="text" class="form-control" placeholder="用户名" aria-describedby="usersname">
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="输入验证码" aria-describedby="password">
+                        <span class="input-group-addon vertificate-image" aria-hidden="true" id="password"><img src="../public/images/captcha.gif"/></span>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="glyphicon glyphicon-lock input-group-addon" aria-hidden="true" id="password"></span>
+                        <input type="password" class="form-control" placeholder="密码（不少于6位）" aria-describedby="password">
+                        <span class="input-group-addon btn btn-login" aria-hidden="true" id="password">Sign In</span>
+                    </div>
+
+                </form>
+                <div class="modal-password-remember">
+                    <a>Forgot password? </a>
+                </div>
+                <div class="modal-login-register">
+                    <a>Sign Up </a>
+                </div>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div></div>
+            </div>
+            <div class="modal-body">
+                <div class="form-notice"></div>
+                <form class="">
+                    <div class="input-group">
+                        <span class="input-group-addon glyphicon glyphicon-user" aria-hidden="true" id="username"></span>
+                        <input type="text" class="form-control" placeholder="用户名" aria-describedby="usersname">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="glyphicon glyphicon-envelope input-group-addon" aria-hidden="true" id="telephone"></span>
+                        <input type="text" class="form-control" placeholder="邮箱" aria-describedby="telephone">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="glyphicon glyphicon-lock input-group-addon" aria-hidden="true" id="password"></span>
+                        <input type="password" class="form-control" placeholder="密码（不少于6位）" aria-describedby="password">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="glyphicon glyphicon-lock input-group-addon" aria-hidden="true" id="re-password"></span>
+                        <input type="password" class="form-control" placeholder="确认密码" aria-describedby="re-password">
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn">Sign Up Now</button>
+                <div><p> have an account? <a>Sign In</a></p></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="/javascripts/jquery-2.1.4.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/index.js"></script>
+</body>
+</html>

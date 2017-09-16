@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Models</title>
+
+    <link rel="stylesheet" href="../../../demos/mutlipointdisplay/public/stylesheets/bootstrap.css"/>
+    <link rel="stylesheet" href="leaflet.css"/>
+    <link rel="stylesheet" href="../../../demos/mutlipointdisplay/public/stylesheets/models.css"/>
+    <link rel="stylesheet" href="jquery-ui.min.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-wrapper navbar-wrapper-scroll">
+    <div class="container-models">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Monitor</a></li>
+                <li><a href="#">Models</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a class="special-li">Users</a></li>
+                <li><a class="special-li">Sign Out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="control-panel">
+        <div class="panel panel-default panel-content">
+            <div class="container control-panel-header">
+                <ul class="list-unstyled">
+                    <li class="form-inline">
+                        <label for="select-model">Models:</label>
+                        <select class="form-control" id="select-model">
+                            <option value=""></option>
+                            <option value="">HeiHe ModFlow Online Model</option>
+                            <option value="">HeiHe ModFlow Offline Model</option>
+                        </select>
+                    </li>
+                    <li class="layer-select">
+                        <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                        <p>Boundary</p>
+                        <input type="checkbox" value=""/>
+                    </li>
+                    <li class="layer-select">
+                        <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                        <p>Channels</p>
+                        <input type="checkbox" value=""/>
+                    </li>
+                    <li class="layer-select">
+                        <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                        <p>Observation Well</p>
+                        <input type="checkbox" value=""/>
+                    </li>
+                </ul>
+            </div>
+            <div class="container control-panel-content">
+                <div class="control-panel-content-time">
+                    <h4>Time Period :</h4>
+                    <div class="time-from">
+                        <label>From :</label>
+                        <select>
+                            <option value="" disabled selected>Year</option>
+                            <option value="">1986</option>
+                            <option value="">1987</option>
+                            <option value="">1988</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <select>
+                            <option value="" disabled selected>Month</option>
+                            <option value="">10</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <select>
+                            <option value="" disabled selected>Day</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="time-to">
+                        <label>To :</label>
+                        <select>
+                            <option value="" disabled selected>Year</option>
+                            <option value="">2006</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <select>
+                            <option value="" disabled selected>Month</option>
+                            <option value="">5</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <select>
+                            <option value="" disabled selected>Day</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-panel-content-param">
+                    <h4>Parameter Modification</h4>
+                    <form class="param-panel">
+                        <table class="table">
+                            <tr>
+                                <td class="param-panel-header">sub-zone1</td>
+                                <td class="param-panel-input"><input type="text" class="form-control" id="sub-zone1" placeholder="HK 22.0" value=""></td>
+                                <td class="param-panel-header">sub-zone2</td>
+                                <td class="param-panel-input"><input type="text" class="form-control" id="sub-zone2" placeholder="HK 9.0" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="param-panel-header">sub-zone3</td>
+                                <td class="param-panel-input"><input type="text" class="form-control" id="sub-zone3" placeholder="HK 90.0" value=""></td>
+                                <td class="param-panel-header">sub-zone4</td>
+                                <td class="param-panel-input"><input type="text" class="form-control" id="sub-zone4" placeholder="HK 90.0" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="param-panel-header">sub-zone5</td>
+                                <td class="param-panel-input"><input type="text" class="form-control" id="sub-zone5" placeholder="HK 20.0" value=""></td>
+                                <td class="param-panel-header">sub-zone6</td>
+                                <td class="param-panel-input"><input type="text" class="form-control" id="sub-zone6" placeholder="HK 20.0" value=""></td>
+                            </tr>
+                            <tr>
+                                <td class="param-panel-header">sub-zone7</td>
+                                <td class="param-panel-input"><input type="text" class="form-control" id="sub-zone7" placeholder="HK 30.0" value=""></td>
+                                <td class="param-panel-header">sub-zone8</td>
+                                <td class="param-panel-input"><input type="text" class="form-control" id="sub-zone8" placeholder="HK 50.0" value=""></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="control-panel-content-start">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon glyphicon-forward" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="panel-zoom">
+            <div>
+                <span class="glyphicon glyphicon-chevron-left panel-zoom-in"></span>
+                <span class="glyphicon glyphicon-chevron-right panel-zoom-out"></span>
+            </div>
+        </div>
+    </div>
+<!--    <div class="map-wrapper">
+        <div class="container" id="map"></div>
+    </div>-->
+
+    <!--<div class="time-control">
+        <div id="time-control-name"></div>
+        <div id="time-control-slider">
+            <div id="slider"></div>
+        </div>
+        <div id="time-control-panel"></div>
+    </div>-->
+
+<script src="jquery-2.1.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="leaflet.js"></script>
+<script src="ChineseTmsProviders.js"></script>
+<script src="modelsMaster.js"></script>
+    <script>
+        $(function() {
+            $( "#slider" ).slider();
+        });
+    </script>
+</body>
+</html>

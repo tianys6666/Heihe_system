@@ -1,0 +1,150 @@
+/*
+*/
+
+html,body{
+	height:100%;
+}
+
+.navbar{
+	position:absolute;
+	top:8%;
+	left:12%;
+	right:12%;
+	z-index: 1030!important;
+
+	margin-bottom: 0;
+	min-height:60px;
+
+}
+.navbar-header{
+	width:22%;
+	min-height: 60px;
+	background: url("../../../../demos/mutlipointdisplay/public/images/logo.png");
+	background-size: cover;
+}
+
+.navbar-right{
+	padding-top:23px;
+}
+
+.navbar-right li{
+	padding-left:10px;
+	padding-right:10px;
+
+	list-style-type: none;
+}
+.navbar-right>li>a{
+	font-size: 20px;
+	text-decoration: none;
+	cursor: pointer;
+	color: #FFF;
+}
+.navbar-collapse{
+	float:left;
+	width:78%;
+}
+.navbar-nav>li>a{
+	padding-top: 23px;
+
+	color:#FFF;
+	font-size:18px;
+}
+.navbar-nav span{
+	padding-right: 10px;
+}
+
+
+.nav > li > a:hover, .nav > li > a:focus{
+	background-color: rgba(130, 129, 197, 0.5);
+	cursor:pointer;
+}
+
+#homehandle{
+	height:100%;
+	position:relative;
+	background: transparent url('../images/water.jpg')  top center no-repeat;
+	background-size: cover;
+}
+
+.skin-cover{
+	position: absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	background-color: rgba(68, 92, 214, 0.60);
+}
+
+.carousel-indicators{
+	bottom:13%;
+}
+.carousel-inner{
+	position:relative;
+	top:20%;
+	height:60%;
+}
+
+.carousel-inner>.item{
+	margin-left:13%;
+	margin-right: 13%;
+	height:100%;
+}
+
+.carousel-inner>.item img{
+	padding-top:5%;
+}
+
+.carousel-inner-1{
+	position: relative;
+	top:30%;
+	height: 60%;
+}
+
+.carousel-inner-1>.item-1{
+	margin-left: 25%;
+	margin-right: 15%;
+	height: 100%;
+}
+
+.span_login{
+      display: inline-block;
+      width: 100px;
+      text-align: left;
+      color:#FFF;
+	  font-size:18px;
+}
+.input1 {height: 25px;margin-bottom: 5px;}
+.span_login,.input1{line-height: 25px;}
+.slider-text{
+	padding:10px 30px 30px 30px;
+	color:#FFF;
+}
+.slider-text h1{
+	padding-top: 0;
+}
+.slider-text p{
+	padding-top:30px;
+}
+.slider-text .btn {
+    background:rgba(130, 129, 197, 0.5);
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.navbar-footer{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	min-height: 30px;
+
+	text-align: center;
+	margin: auto auto;
+}
+
+.navbar-footer>a{
+	text-decoration: none;
+	color:#FFF;
+}

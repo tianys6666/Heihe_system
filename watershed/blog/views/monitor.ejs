@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title><%= title %></title>
+
+	<link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+	<link rel="stylesheet" href="/stylesheets/leaflet.css" />
+	<link rel="stylesheet" href="/stylesheets/monitor.css" />
+
+</head>
+<body>
+	<header>
+		<!-- the header nav,which includes the brand and user inforamtion-->
+		<nav class="navbar navbar-default navbar-wrapper">
+			<div class="navbar navbar-brand">
+				<p class="logo">WaterShed Datacenter</p>
+			</div>
+			<div class="navbar navbar-right">
+				<div>
+					<ul class="nav navbar-nav">
+						<li class="col-md-4 navbar-item"><a>Messages</a></li>
+						<li class="col-md-3 navbar-item"><a>Home</a></li>
+						<li class="col-md-3 navbar-item"><a>Logout</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container-fluid main-wrapper">
+		<!-- the aside tag is the section of main-left -->
+		<aside class="nav nav-stacked main-left main-left-wrapper">
+			<!-- the user information(includes the portrait and the name ) can display in this section -->
+			<div class="main-left-profile">
+				<img src="/images/profile_1.jpeg" alt="profile" class="img-circle">
+				<p>Hello World</p>
+			</div>
+			<div>
+				<!-- this section is for the searcherbox,so can search specaila map -->
+				<form>
+					<div class="form-group">
+						<label class="sr-only" for="searchField">searchName</label>
+						<div class="input-group">
+							<input type="text" placeholder="Search" class="form-control" id="searchField">
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+							</span>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div>
+				<ul class="list-group list-identify">
+				</ul>
+			</div>
+		</aside>
+		<!-- this div tag includes the special catalog and the section of showing map -->
+		<div class="main-right-wrapper">
+			<div role="navigation" class="navbar navbar-default main-right-introduction">
+				<span class="glyphicon glyphicon-stats text-center" aria-hiddn="true"></span>
+				<p><a id="selected-name" >the map :  </a></p>
+			</div>
+			<div class="main-right-canvas">
+				<div id="map"></div>
+			</div>
+			<ul id="datapanel" class="list-group" style="">
+				<li class="list-group-item datapanel-header" id="datapanel-header"></li>
+				<li class="list-group-item ">
+					<div id="contentPanel">
+						<table class="table">
+							<tr>
+								<th colspan="4" id="obswell-name"></th>
+								<th colspan="2"><h3><small>数据集：1984-2006</small></h3></th>
+							</tr>
+							<tr id="obswell-info">
+								<td  colspan="2" id="obswell-lng"></td>
+								<td  colspan="2" id="obswell-lat"></td>
+								<td  colspan="2" id="obswell-alt"></td>
+							</tr>
+							<tr id="obswell-minmax">
+								<td  colspan="3" id="obswell-max"></td>
+								<td  colspan="3" id="obswell-min"></td>
+							</tr>
+						</table>
+					</div>
+				</li>
+				<li class="list-group-item"><div id="echartPanel1"></div></li>
+				<li class="list-group-item"><div id="echartPanel2"></div></li>
+				<li class="list-group-item datapanel-bottom"></li>
+			</ul>
+		</div>
+	</div>
+	
+	<footer class="navbar-fixed-bottom navbar-default footer-wrapper">
+		<div class="container">
+			<p class="text-center">Copyright © 2015 - 2020  All Rights Reserved</p>
+		</div>
+	</footer>
+	
+	<script type="text/javascript" src="/javascripts/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="/javascripts/leaflet.js"></script>
+	<script type="text/javascript" src="/javascripts/echarts.js"></script>
+	<script type="text/javascript" src="/javascripts/ChineseTmsProviders.js"></script>
+
+	<script type="text/javascript" src="/javascripts/monitorMaster.js"></script>
+
+</body>
+</html>

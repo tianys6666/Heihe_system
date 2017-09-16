@@ -1,0 +1,270 @@
+/*this file is for the mapSelcet.html
+  in this file , it defines some special style  which is different bootstrap
+  and some is inherited by the bootstrap 
+
+  the author: zhaorui 
+  version:V 0.1
+*/
+
+ /*the navbar-wrapper is to redefine the margin-bottom 
+   in the boostrap.css the navbar style defined the margin-bottom:20px;
+ */
+.navbar{
+	border-top: 0;
+}
+.navbar-wrapper,.navbar-wrapper>.navbar{
+	margin-bottom:0px;
+	background-color: rgb(95, 158, 160);
+}
+.navbar-brand{
+	cursor: pointer;
+	width: 17%;
+}
+.logo{
+	display: inline-block;
+	color:#F4F4F4;	
+}
+.logo:hover{
+	color:#FFFFFF;
+}
+.navbar-item{
+	padding-left: 0px;
+}
+.navbar-item>a{
+	cursor: pointer;
+	color:#FFFFFF !important;
+}
+.navbar-item:hover{
+	background-color:#003459;
+	border-radius:3px;
+}
+/*-----------the main section----------------------------*/
+.main-wrapper{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.main-left{
+	background-color:#F4F4F4;
+	border-right: 1px solid #CCC;
+}
+
+/*main-left-wrapper used to define the height sidebar
+  min-height 100% can auto change the height in different sizes
+*/
+.main-left-wrapper{
+	position: absolute;
+	min-height: 100%;
+	width:17%;
+	padding-bottom:30px;
+}
+.main-left-profile{
+	height:80px;
+}
+.main-left-profile>img{
+	margin-top:10px;
+	margin-left:10px;
+	width:60px;
+	height:60px;
+}
+.main-left-profile>a{
+	margin-left: 10px;
+	margin-top: 15px;
+}
+.main-left-profile>p{
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-family: Helvetica;
+	font-size: 13px;
+}
+
+.map-list{
+	display: none;
+}
+/*-------------------------------*/
+.main-right-wrapper{
+	position: absolute;
+	margin-left: 17%;
+	width:84%;
+	background-image: url(../../../../demos/mutlipointdisplay/public/images/map_background.png);
+	background-repeat: repeat;
+}
+.main-right-introduction{
+	margin-bottom: 0px;
+	min-height: 30px;
+	padding-left: 10px;
+	padding-top:7px;
+	background-color: #FFFFFF;
+}
+.main-right-introduction>p{
+	display:inline-block;
+	margin-left:18px;
+}
+.main-right-introduction>p>mark{
+	background-color:#00A8E8;
+	border-radius: 4px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left:5px;
+	padding-right:5px;
+	cursor:default; 
+	color:#555;  
+}
+.main-right-introduction>.glyphicon-stats{
+	font-size:18px;
+}
+.main-right-canvas{
+	position: absolute;
+	width: 100%;
+}
+/*
+the list-group-item have the icon ,so we need change the icon's size
+then icon have some special style
+*/
+.glyphicon-list{
+	font-size: 15px;
+}
+.glyphicon-menu-down{
+	font-size:14px;
+}
+.item-prefix-icon{
+	margin-right: 10px;
+}
+.item-postponed-icon{
+	float:right;
+	margin-right:1px;
+	margin-top: 5px;
+}
+/* the list-group is defined in the bootstrap.css 
+   but in the bootstrap ,this style is margin-bottom:20px;
+*/
+.list-group{
+  	margin-bottom: 0px;
+}
+.list-identify{
+
+}
+.list-group-item{
+	cursor: pointer;
+	background-color: #F4F4F4;
+}
+.list-group-item:hover{
+	background-color: #FFFFFF;
+}
+.list-group-item>a{
+	font-size: 14px;
+	color:#555;
+}
+.list-group-item>a:hover{
+	color:black;
+	text-decoration: none;
+}
+/*--------------------------------------------
+in this section,the special item has some special identites
+label(bootstrap's is margin-bottom:4px)  label>input[type="checkbox"]is margin:4,0,0;
+*/
+.list-item>label{
+	margin-bottom:0px;
+}
+.list-item>label>input[type="checkbox"]{
+	margin:0;
+}
+.list-item>label>span{
+	margin-left:15px; 
+}
+.list-item>label>a{
+	margin-left: 10px;
+	font-size: 13px;
+	color:#555;
+	font-weight:normal;
+}
+.list-item>label>a:hover{
+	text-decoration: none;
+	color:black;
+}
+/*------------------*/
+@media (max-height:768px ){
+	#map{
+	width:100%;
+	height:580px;
+	}
+}
+
+@media (max-height: 960px) and (min-height: 769px){
+	#map{
+	width:100%;
+	height:868px;
+	}
+}
+
+@media (max-height:1024px) and (min-height: 961px){
+	#map{
+	width:100%;
+	height:874px;
+	}
+}
+
+@media (max-height:1050px ) and (min-height:1025px){
+	#map{
+	width:100%;
+	height:898px;
+	}
+}
+
+@media (max-height:1200px ) and (min-height: 1051px){
+	#map{
+	width:100%;
+	height:953px;
+	}
+}
+/*----------footer section------------------------------*/
+.footer-wrapper{
+	background-color:rgb(95, 158, 160);
+}
+.footer-wrapper>.container>p{
+	color:#FFFFFF;
+	margin-bottom: 3px;
+}
+.leaflet-control-layers-toggle{
+	background-image: url(../images/layers2.png);
+	width:36px;
+	height:36px;
+}
+#datapanel{
+	position:absolute;
+	width:550px;
+	background-color:#F4F4F4  ! important;
+
+	border:1px solid;
+	border-radius:10px;
+	box-shadow: 10px 10px 5px #888888;
+	display:none;
+}
+#datapanel> li:hover{
+	background-color: #F4F4F4;
+	cursor:auto;
+}
+#datapanel> li{
+	padding-left:25px;
+}
+.datapanel-header,.datapanel-bottom{
+	background-color:#007EA7;
+	height:30px;
+}
+.datapanel-header:hover,.datapanel-bottom:hover{
+	background-color:#007EA7 !important;
+}
+#contentPanel{
+	height:150px;
+	width:500px;
+}
+#echartPanel1{
+	height:200px;
+	width:500px;
+	background-color: #F4F4F4 ! important;
+}
+#echartPanel2{
+	height:200px;
+	width:500px;
+	background-color: #F4F4F4 ! important;
+}

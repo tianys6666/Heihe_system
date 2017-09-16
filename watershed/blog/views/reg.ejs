@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Login</title>
+
+	 <link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+ 	 <link rel="stylesheet" href="/stylesheets/bootstrap-theme.css" />
+ 	 <link rel="stylesheet" href="/stylesheets/home-style.css" />
+</head>
+<body>
+<!-- 	<div class="login-box">
+	<span class="span">用户名:</span><input type="text" name="name" /><br/>
+	<span class="span">确认密码:</span><input type="password" name="password-repeat" /><br/>
+	<span class="span">邮箱:</span><input type="email" name="email" /><br/>
+</div> -->
+  <nav class="navbar">
+    <div class="container-fluid">
+
+      <div class="navbar-header"></div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+          <a title="monitor" href="monitor"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>Monitor</a>
+          </li>
+          <li>
+            <a><span class="glyphicon glyphicon-stats" aria-hidder="true"></span>Prediction</a>
+          </li>
+          <li>
+            <a><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>News</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+    <!-- the homepage's main section -->
+  <section id="homehandle" class="carousel slide" data-ride="carousel">
+    <div class="skin-cover"></div>
+    <div class="carousel-inner-1">
+    <div class="item-1">
+    	<form method="post">
+       <span class="span_login">Username:</span> <input  class="input1" type="text" name="name"/><br/>
+       <span class="span_login">Password:</span>   <input  class="input1" type="password" name="password" /><br/>
+       <span class="span_login">Repeat:</span> <input  class="input1" type="password" name="password-repeat" /><br/>
+       <span class="span_login">Email:</span>    <input class="input1" type="email" name="email"/><br/> 
+  		 <button type="submit" class="btn btn-success">Submit</button>
+		</form>
+	</div>
+	</div>
+  </section>
+
+  <footer class="navbar-footer">
+    <a>Copyright@2012-2016 Dslab</a>
+  </footer>
+  
+  <script type="text/javascript" src="/javascripts/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+</body>
+</html>
